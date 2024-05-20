@@ -1,0 +1,64 @@
+/* Asegúrate de enlazar este archivo en tu HTML con <link rel="stylesheet" href="styles.css"> */
+
+/* Estilo para el cuerpo y la pantalla completa */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Ocultar el scroll mientras se carga */
+}
+
+/* Contenedor de la pantalla de carga */
+#loading-screen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f3f3f3;
+}
+
+/* Estilo para el video de carga */
+.loading-video {
+    width: 80%; /* Ancho del video */
+    max-width: 800px; /* Ancho máximo */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Estilo para el mensaje de carga */
+#loading-screen p {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+/* Estilo para el contenido de la página */
+#content {
+    display: none; /* Ocultar inicialmente */
+    padding: 20px;
+}
+
+/* Estilo para el botón de mostrar pantalla de carga */
+button {
+    background-color: #3498db; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 15px 30px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar en línea */
+    font-size: 16px; /* Tamaño de la fuente */
+    margin: 4px 2px; /* Márgenes */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    border-radius: 12px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición para el cambio de color */
+}
+
+/* Estilo para el botón al pasar el ratón */
+button:hover {
+    background-color: #2980b9; /* Color de fondo al pasar el ratón */
+}

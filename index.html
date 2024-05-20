@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Pantalla de Carga</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS -->
+</head>
+<body>
+    <!-- Contenedor para la pantalla de carga -->
+    <div id="loading-screen">
+        <video autoplay loop class="loading-video">
+            <source src="La era de hielo película completa en español.mp4" type="video/mp4">
+            <!-- Si quieres proporcionar diferentes formatos de video, puedes agregar más elementos <source> -->
+            Tu navegador no soporta el elemento de video.
+        </video>
+        <p>Cargando...</p>
+    </div>
+
+    <!-- Contenido de la página -->
+    <div id="content" style="display: none;">
+        <!-- Aquí va el contenido principal de tu página -->
+        <h1>Bienvenido a mi página</h1>
+        <p>Esta es la página principal.</p>
+        <button onclick="showLoadingScreen()">Mostrar pantalla de carga</button> <!-- Botón estilizado -->
+    </div>
+
+    <script src="script.js"></script> <!-- Enlace al archivo JS -->
+</body>
+</html>
